@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Lobster", cursive;
+}
+
+/* Navbar */
+.isNavbar {
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.24);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* Biar Navbar posisi paling atas */
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bolder;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 50px;
+  display: inline;
+}
+
+nav ul {
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+/* Jumbotron */
+
+.isJumbotron-cover {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: 0 60%;
+  position: static;
+}
+
+.isJumbotron {
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: white;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.isJumbotron h1 {
+  font-family: "Lobster", cursive;
+  font-size: 45pt;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  margin: 20px 20px 20px 20px;
+}
+
+.judul {
+  font-family: "Lobster", cursive;
+  font-size: 20pt;
+}
+
+.right {
+  text-align: right;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+#visimisi {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.visi,
+.misi {
+  flex: 1;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.button {
+  background: rgb(42, 165, 83);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  border-bottom: 4px solid #1a2040;
+}
+
+.button:hover {
+  background: rgb(60, 231, 117);
+}
+
+.button:active {
+  background: rgb(20, 78, 39);
+}
+
+#kontak {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.donasi,
+.isKontak {
+  flex: 1;
+}
+
+footer {
+  padding: 5px;
+  color: white;
+  background-color: rgb(42, 165, 83);
+  text-align: center;
+  font-weight: bold;
+}
+
+header {
+  display: inline;
+}

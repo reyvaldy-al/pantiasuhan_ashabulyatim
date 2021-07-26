@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Lobster", cursive;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.isNavbar {
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.24);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* Biar Navbar posisi paling atas */
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bolder;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 50px;
+  display: inline;
+}
+
+nav ul {
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+.isJumbotron {
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: white;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.isJumbotron h1 {
+  font-family: "Lobster", cursive;
+  font-size: 45pt;
+  margin-bottom: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  margin: 10px auto;
+  width: fit-content;
+  align-self: center;
+}
+
+.table {
+  color: #333;
+  width: fit-content;
+  border-collapse: collapse;
+  border-spacing: 100px;
+}
+
+td,
+th {
+  border: 1px solid transparent;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+th {
+  background: #dfdfdf;
+  font-weight: bold;
+}
+
+td {
+  background: #fafafa;
+  text-align: center;
+  text-align: left;
+}
+
+tr:nth-child(even) td {
+  background: #f1f1f1;
+}
+
+tr:nth-child(odd) td {
+  background: #fefefe;
+}
+
+tr td:hover {
+  background: #666;
+  color: #fff;
+}
+
+.button {
+  background: rgb(42, 165, 83);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  border-bottom: 4px solid #1a2040;
+}
+
+.button:hover {
+  background: rgb(60, 231, 117);
+}
+
+.button:active {
+  background: rgb(20, 78, 39);
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  color: white;
+  background-color: rgb(42, 165, 83);
+  text-align: center;
+  font-weight: bold;
+}
